@@ -10,12 +10,42 @@ Bookmarklets lol
 this is the beta page
 </center>
 <center>
- 1. Put a fly on your web page (trigger warning)
+ <a>1. Put a fly on your web page (trigger warning)</a>
  </center>
-javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);
+<h2 id="one">javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);</h2>
 <center>
- 2. Turn every image into a rick roll (made by yours truly)
+<a> 2. Turn every image into a rick roll (made by yours truly)</a>
  </center>
-javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())
+<h2 id="two">javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())</h2>
+<script>
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("one");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+function myFunctionTwo() {
+  /* Get the text field */
+  var copyText = document.getElementById("two");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+</script>
 </body>
 </html>
