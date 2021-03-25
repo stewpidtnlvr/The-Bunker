@@ -10,6 +10,10 @@ cursor:default;
         a:hover {
             cursor: pointer;
         }
+        input {
+        visibility: hidden;
+        }
+        
     </style>
     </head>
     <body>
@@ -22,11 +26,11 @@ this is the beta page
 <center>
  <a onclick="myFunction()">1. Put a fly on your web page (trigger warning)</a>
  </center>
-<h2 id="one" value="javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);">javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);</h2>
+<input id="one" type="text" value="javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);">
 <center>
 <a onclick="myFunctionTwo()"> 2. Turn every image into a rick roll (made by yours truly)</a>
  </center>
-<h2 id="two" value="javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())">javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())</h2>
+<input id="two" type="text" value="javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())">
 <script>
     function myFunction() {
   /* Get the text field */
