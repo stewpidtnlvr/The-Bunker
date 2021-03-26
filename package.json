@@ -2,6 +2,10 @@
   "name": "The-Bunker",
   "description": "Chrome App For Procrastinators",
   "version": "1.0",
+  "main": "alloy/server.js",
+  "directories": {
+    "start": "node alloy/server.js"
+  },
   "keywords": [
     "The-Bunker",
     "Proxy",
