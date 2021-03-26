@@ -1,25 +1,34 @@
-BrowserQuest
-============
+# Alloy Proxy
+A web proxy for use in combating web filters.
 
-BrowserQuest is a HTML5/JavaScript multiplayer game experiment.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/titaniumnetwork-dev/alloy/tree/master)
 
+## Running locally
 
-Documentation
--------------
-
-Documentation is located in client and server directories.
-
-
-License
--------
-
-Code is licensed under MPL 2.0. Content is licensed under CC-BY-SA 3.0.
-See the LICENSE file for details.
+```sh
+git clone https://github.com/titaniumnetwork-dev/alloyproxy.git
+cd alloyproxy
+node server.js
+```
 
 
-Credits
--------
-Created by [Little Workshop](http://www.littleworkshop.fr):
+## Options in config.json
+```json
+{
+    "port": "8080",
+    "ssl": false,
+    "prefix": "/web/",
+    "localAddresses": [],
+    "blockedHostnames": []
+}
+```
 
-* Franck Lecollinet - [@whatthefranck](http://twitter.com/whatthefranck)
-* Guillaume Lecollinet - [@glecollinet](http://twitter.com/glecollinet)
+`"port": "8080"` = Sets HTTP server port of web proxy.
+
+`"ssl": "false"` = Sets HTTP server SSL.
+
+`"prefix": "/web/"` = Sets the overall prefix of the web proxy.
+
+`"localAddresses": [ "0.0.0.0" ]` = Allows you to choose which IP to make the request from. If there are multiple IP's then the IP chosen will be randomized.
+
+`"blockedHostnames": [ "example.org", "example.com" ]` = If the hostname of the proxy URL matches any of the URL hostnames listed in the array, the request to the server will be cancelled.

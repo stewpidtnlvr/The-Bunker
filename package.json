@@ -1,39 +1,39 @@
 {
-  "name": "The-Bunker",
-  "description": "Chrome App For Procrastinators",
-  "version": "1.0",
-  "main": "alloy/server.js",
+  "name": "alloy",
+  "version": "2.5.0",
+  "description": "A web proxy.",
+  "main": "server.js",
   "directories": {
-    "start": "node alloy/server.js"
+    "lib": "lib"
   },
-  "keywords": [
-    "The-Bunker",
-    "Proxy",
-    "Unblocker",
-    "alloy",
-    "web unblocker",
-    "The Bunker",
-    "the bunker",
-    "unblock",
-    "unblock school ",
-    "unblock chromebook",
-    "school",
-    "workplace",
-    "webfilter"
-  ],
-  "author": "Stewpidtnlvr (sk8ordiechicago#4895)",
   "dependencies": {
-    "ws": "^7.4.3"
-  },
+    "jsdom": "^16.5.1",
+    "ws": "^7.4.3"  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/stewpidtnlvr/The-Bunker.git"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titaniumnetwork-dev/alloy.git"
+  },
+  "keywords": [
+    "proxy",
+    "titanium network",
+    "alloy",
+    "alloyproxy",
+    "web unblocker",
+    "unblock",
+    "web proxy",
+    "school",
+    "workplace",
+    "web filter"
+  ],
+  "author": "Titanium Network",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/titaniumnetwork-dev/alloy/issues"
+  },
+  "homepage": "https://github.com/titaniumnetwork-dev/alloy#readme"
 }
