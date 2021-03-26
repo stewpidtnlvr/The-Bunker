@@ -15,7 +15,7 @@
   "src": "pwabuilder-sw.js",
 "type": "Offline copy of assets",
     "update_via_cache": "none",
-       "scope": "./public/"
+       "scope": "."
 
 }
 }
