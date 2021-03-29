@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "jsdom": "^16.5.1",
-    "ws": "^7.4.3", 
-  "express": "^1.16.0"},
+    "ws": "^7.4.3"},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
